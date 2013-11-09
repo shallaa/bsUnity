@@ -7,13 +7,14 @@ public partial class C : MonoBehaviour {
 	
 	private void title(){
 		_stat = stat.title;
-		V.title( onTitleStart, onTitleFacebook );
+		V.title( onTitleStart );
 	}
 	public void onTitleStart( string v ){
 		bs.log("onTitleStart");
 		V.titleOff();
 		map();
 	}
+	/*
 	public void onTitleFacebook( string v ){
 		bs.log("onTitleFacebook");
 		FB.Init( ()=>{
@@ -32,4 +33,5 @@ public partial class C : MonoBehaviour {
 			}
 		} );
 	}
+	*/
 }
