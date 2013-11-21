@@ -3,12 +3,13 @@ using System.Collections;
 
 public partial class V : MonoBehaviour {
 
-	static public void title( bs.A<string> s, bs.A<string> f ){
+	static public void title( bs.A<string> s ){
 		bs.go( bs.COM.Gtexture, "name", "logo", 
 			bs.G.texture, "title", bs.G.uv, bs.rect(512f,0f,230f,87f), 
 			bs.G.x, bs.G.center, "y", -87f,
 			"t(", "y", 10f, "time", .5f, "delay", .5f, ")" 
 		);
+		/*
 		bs.go( bs.COM.Gtexture, "name", "facebook", 
 			bs.G.texture, "title", bs.G.uv, bs.rect(512f,87f,230f,62f), 
 			bs.G.x, bs.G.center, bs.G.y, bs.G.middle, 
@@ -16,6 +17,7 @@ public partial class V : MonoBehaviour {
 			"sx", 0f, "sy", 0f,
 			"t(", "sx", 1f, "sy", 1f, "time", 1f, "delay", .5f, "easetype", iTween.EaseType.easeOutElastic, ")" 
 		);
+		*/
 		bs.go( bs.COM.Gtexture, "name", "start", 
 			bs.G.texture, "title", bs.G.uv, bs.rect(512f,149f,230f,62f), 
 			bs.G.x, bs.G.center, "y", 700f, 
